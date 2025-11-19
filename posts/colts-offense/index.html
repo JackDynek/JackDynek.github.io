@@ -227,11 +227,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Season"</span>, </span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Percentage of drives ending in scores"</span>, </span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"NFL Offenses drives ending in scores by year"</span>, </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"NFL Offense's drives ending in scores"</span>, </span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"This is how the Colts compare against the past years Superbowl matchup."</span>, </span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: Data Provider | By Jack Dynek"</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: NFL Sports Reference | By Jack Dynek"</span></span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()<span class="sc">+</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -271,9 +272,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Offensive Yards Per Game"</span>, </span>
 <span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Colts First 8 Games on Offense in 2024"</span>, </span>
 <span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"This shows how the Colts pass and rushing yards each game to start 2024."</span>, </span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: Data Provider | By Jack Dynek"</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: NFL Sports Reference | By Jack Dynek"</span></span>
 <span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()<span class="sc">+</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -283,13 +285,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>This is the start to the colts season in 2024, and through eight games they averaged 315 yards and relied heavily on the pass game, only going over 400 yards once.</p>
+<p>This is the start to the colts season in 2024, and through eight games they averaged 315 yards, represented by the blue line, and relied heavily on the pass game, only going over 400 yards once.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> </span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">data=</span>longame825, <span class="fu">aes</span>(<span class="at">x=</span>Week, <span class="at">weight=</span>Yards, <span class="at">fill=</span>Type)) <span class="sc">+</span> </span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()<span class="sc">+</span>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="fl">383.33</span>, <span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()<span class="sc">+</span>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="fl">383.33</span>, <span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span> <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="dv">315</span>, <span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Week"</span>, </span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Offensive Yards Per Game"</span>, </span>
@@ -297,7 +299,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"This shows how the Colts pass and rushing yards each game to start 2025."</span>, </span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: NFL Sports Reference | By Jack Dynek"</span></span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()<span class="sc">+</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -321,15 +324,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>TW <span class="ot">&lt;-</span> terec <span class="sc">|&gt;</span> <span class="fu">filter</span>(Player <span class="sc">==</span> <span class="st">"Tyler Warren"</span>)</span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>TM <span class="ot">&lt;-</span> terec <span class="sc">|&gt;</span> <span class="fu">filter</span>(Player <span class="sc">==</span> <span class="st">"Trey McBride"</span>)</span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">data=</span>terec, <span class="fu">aes</span>(<span class="at">x=</span>Yds, <span class="at">y=</span>Rec, <span class="at">size=</span>TD )) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">data=</span>TW, <span class="fu">aes</span>(<span class="at">x=</span>Yds, <span class="at">y=</span>Rec, <span class="at">size=</span>TD),<span class="at">color=</span><span class="st">"blue"</span>)<span class="sc">+</span> <span class="fu">geom_text_repel</span>(<span class="at">data=</span>TW, <span class="fu">aes</span>(<span class="at">x=</span><span class="dv">490</span>, <span class="at">y=</span><span class="dv">43</span>, <span class="at">label=</span>Player))<span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">data=</span>TM, <span class="fu">aes</span>(<span class="at">x=</span>Yds, <span class="at">y=</span>Rec, <span class="at">size=</span>TD),<span class="at">color=</span><span class="st">"red"</span>) <span class="sc">+</span> <span class="fu">geom_text_repel</span>(<span class="at">data=</span>TM, <span class="fu">aes</span>(<span class="at">x=</span><span class="dv">480</span>, <span class="at">y=</span><span class="dv">50</span>, <span class="at">label=</span>Player))<span class="sc">+</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">data=</span>terec, <span class="fu">aes</span>(<span class="at">x=</span>Yds, <span class="at">y=</span>Rec, <span class="at">size=</span>TD )) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">data=</span>TW, <span class="fu">aes</span>(<span class="at">x=</span>Yds, <span class="at">y=</span>Rec, <span class="at">size=</span>TD),<span class="at">color=</span><span class="st">"blue"</span>)<span class="sc">+</span> <span class="fu">geom_text_repel</span>(<span class="at">data=</span>TW, <span class="fu">aes</span>(<span class="at">x=</span><span class="dv">490</span>, <span class="at">y=</span><span class="dv">43</span>, <span class="at">label=</span>Player))<span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">data=</span>TM, <span class="fu">aes</span>(<span class="at">x=</span>Yds, <span class="at">y=</span>Rec, <span class="at">size=</span>TD),<span class="at">color=</span><span class="st">"red"</span>) <span class="sc">+</span> <span class="fu">geom_text</span>(<span class="at">data=</span>TM, <span class="fu">aes</span>(<span class="at">x=</span><span class="dv">480</span>, <span class="at">y=</span><span class="dv">48</span>, <span class="at">label=</span>Player))<span class="sc">+</span></span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Total Recieving Yards"</span>, </span>
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Total Catches"</span>, </span>
 <span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"NFL Tight End Recieving Leaders"</span>, </span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"This is how tight ends across the league compare statistically with each other."</span>, </span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"Rookie Tyler Warren is already dominating amongst other top nfl tight ends."</span>, </span>
 <span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: NFL Sports Reference | By Jack Dynek"</span></span>
 <span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()<span class="sc">+</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -353,10 +357,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Rushing Yards"</span>, </span>
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Rushing Attempts"</span>, </span>
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"NFL Rushing Leaders"</span>, </span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"This is how NFL running backs compare statistically against each other"</span>, </span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"This is how Jonathan Taylor compares statistically against other RBS"</span>, </span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: NFL Sports Reference | By Jack Dynek"</span></span>
 <span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
