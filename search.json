@@ -11,7 +11,7 @@
     "href": "posts/luka-lakers-impact/index.html",
     "title": "The Luka Doncic Trade Has Left The Mavericks In Shambles",
     "section": "",
-    "text": "Story about basketball"
+    "text": "On a cold winter day in February 2025, Luka Doncic was traded from the Dallas Mavericks to the Los Angeles Lakers in a trade that shocked the sports world. Doncic was already an established star within the league, and only a year prior had led the Mavs to the finals althought they were dominated by the Boston Celtics.\n\n\nCode\nlibrary(tidyverse)\nlibrary(ggrepel)\n\nNBAscoring &lt;- read_csv(\"data/ScoringAvg.csv\")\n\nDoncic &lt;- NBAscoring |&gt; filter(Player == \"Luka Dončić\")\nFlagg &lt;- NBAscoring |&gt; filter(Player == \"Cooper Flagg\")\nChristie &lt;- NBAscoring |&gt; filter(Player == \"Max Christie\")\n\nggplot() + geom_point(data=NBAscoring, aes(x=PTS, y=FGPCT, size = AST))+geom_point(data=Doncic, aes(x=PTS, y=FGPCT, size=AST),color=\"purple\")+ geom_text_repel(data=Doncic, aes(x=36, y=.44, label=Player))+geom_point(data=Flagg, aes(x=PTS, y=FGPCT, size=AST),color=\"blue\")+ geom_point(data=Christie, aes(x=PTS, y=FGPCT, size=AST),color=\"blue\")+\n  labs(\n    x=\"Points Per Game\", \n    y=\"Field Goal Percentage\", \n    title=\"Top Scorers in the NBA\", \n    subtitle=\"Luka Doncic leads the NBA in scoring, far ahead from his mavs trade counterparts\", \n    caption=\"Source: NBA Sports Reference | By Jack Dynek\"\n    ) +\n    theme_minimal()+\n  theme(plot.title = element_text(size = 16, face = \"bold\"))"
   },
   {
     "objectID": "posts/colts-offense/index.html",
