@@ -1387,7 +1387,7 @@ font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">x=</span><span class="fl" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">28.1</span>, <span class="at" style="color: #657422;
+font-style: inherit;">28.9</span>, <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">y=</span>.<span class="dv" style="color: #AD0000;
 background-color: null;
@@ -1796,7 +1796,7 @@ font-style: inherit;">Mavs have regressed"</span>, </span>
 background-color: null;
 font-style: inherit;">caption=</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"Source: NFL Sports Reference | By Jack Dynek"</span></span>
+font-style: inherit;">"Source: NBA Sports Reference | By Jack Dynek"</span></span>
 <span id="cb2-23">    ) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
@@ -1829,7 +1829,7 @@ font-style: inherit;">"bold"</span>))</span></code></pre></div></div>
 </div>
 </div>
 </div>
-<p>As seen in the graph, the impact of Luka on the Lakers has led them to great offensive success while leaving the Mavs in shambles. While seeing the impact after a whole year can be helpful, whats even more interesting is seeing how the teams both immediately played after the trade happened, especially comparing their scoring.</p>
+<p>As seen in the graph, the impact of Luka on the Lakers has led them to great offensive success while leaving the Mavs in shambles. While seeing the impact after a whole year can be helpful, what’s even more interesting is seeing how the two teams immediately played after the trade happened, especially comparing their scoring.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -2021,7 +2021,7 @@ font-style: inherit;">brief boost before regression while the lakers scored more
 background-color: null;
 font-style: inherit;">caption=</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"Source: NFL Sports Reference | By Jack Dynek"</span></span>
+font-style: inherit;">"Source: NBA Sports Reference | By Jack Dynek"</span></span>
 <span id="cb3-22">    ) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
