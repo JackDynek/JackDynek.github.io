@@ -1244,7 +1244,8 @@ font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Max Christie"</span>)</span>
 <span id="cb1-10"></span>
-<span id="cb1-11"><span class="fu" style="color: #4758AB;
+<span id="cb1-11"></span>
+<span id="cb1-12"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">ggplot</span>() <span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -1369,50 +1370,82 @@ background-color: null;
 font-style: inherit;">label=</span>Player)) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb1-12"><span class="fu" style="color: #4758AB;
+<span id="cb1-13">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_vline</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">xintercept =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">28.1</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> </span>
+<span id="cb1-14">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_text</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">28.1</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y=</span>.<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">label=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Luka 2024 Mavs Average"</span>))<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb1-15"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">scale_y_continuous</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">labels =</span> percent) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb1-13">  <span class="fu" style="color: #4758AB;
+<span id="cb1-16">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">labs</span>(</span>
-<span id="cb1-14">    <span class="at" style="color: #657422;
+<span id="cb1-17">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">x=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Points Per Game"</span>, </span>
-<span id="cb1-15">    <span class="at" style="color: #657422;
+<span id="cb1-18">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">y=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Field Goal Percentage"</span>, </span>
-<span id="cb1-16">    <span class="at" style="color: #657422;
+<span id="cb1-19">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">title=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Luka leads the NBA in Points Per Game"</span>, </span>
-<span id="cb1-17">    <span class="at" style="color: #657422;
+<span id="cb1-20">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">subtitle=</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"Luka Doncic leads the NBA in scoring, far ahead of the player the Mavs recieved from the trade"</span>, </span>
-<span id="cb1-18">    <span class="at" style="color: #657422;
+font-style: inherit;">"Luka Doncic leads the NBA in scoring, far ahead of the players the Mavs recieved </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">\n</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">from the trade as well as his 2024 Dallas average"</span>, </span>
+<span id="cb1-21">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">caption=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Source: NBA Sports Reference | By Jack Dynek"</span></span>
-<span id="cb1-19">    ) <span class="sc" style="color: #5E5E5E;
+<span id="cb1-22">    ) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb1-20">    <span class="fu" style="color: #4758AB;
+<span id="cb1-23">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme_minimal</span>()<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb1-21">  <span class="fu" style="color: #4758AB;
+<span id="cb1-24">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -1754,11 +1787,11 @@ font-style: inherit;">"The Mavericks have struggled offensively post Luka trade"
 background-color: null;
 font-style: inherit;">subtitle=</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"In the year following the trade the Lakers have only improved on offense while the</span><span class="sc" style="color: #5E5E5E;
+font-style: inherit;">"In the year following the trade the Lakers have improved on offense while the</span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">\n</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;"> Mavs have regressed"</span>, </span>
+font-style: inherit;">Mavs have regressed"</span>, </span>
 <span id="cb2-22">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">caption=</span><span class="st" style="color: #20794D;
@@ -1979,11 +2012,11 @@ font-style: inherit;">"Lakers outpaced the Mavs in scoring post Luka trade"</spa
 background-color: null;
 font-style: inherit;">subtitle=</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"While the Scoring is eratic, the Mavericks experienced a brief boost before</span><span class="sc" style="color: #5E5E5E;
+font-style: inherit;">"While the Scoring is eratic in the 10 games after the trade, the Mavericks experienced a </span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">\n</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;"> regression while the lakers scored more"</span>, </span>
+font-style: inherit;">brief boost before regression while the lakers scored more overall"</span>, </span>
 <span id="cb3-21">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">caption=</span><span class="st" style="color: #20794D;
